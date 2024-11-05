@@ -72,11 +72,13 @@ footer
     display: grid;
     text-align: center;
     align-items: center;
+    line-height: 176px;
     grid-row: 128px;
-    background-color: aqua;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .footerLogo
 {
-    width: 16px;
+    width: 64px;
+    height: 64px;
 }
