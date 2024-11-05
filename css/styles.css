@@ -1,28 +1,33 @@
 header
 {
-    background-color: aqua;
+    background-color: #a5ff38;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,64px);
+}
+
+body
+{
+    background-color: black;
 }
 
 .imgLogo
 {
     height: 50px;
     margin: 5px;
-    border: 2px inset red;
+    border: 2px solid transparent;
     transition: 0,5s ease;
 }
 
 .imgLogo:hover
 {
     transition: 0,5s ease;
-    border: 2px outset purple;
+    border: 2px outset white;
 }
 
 .headerTitle
 {
-    background-color: blue;
+    color: black;
     text-align: center;
     line-height: 64px;
     font-family: 'Courier New', Courier, monospace;
