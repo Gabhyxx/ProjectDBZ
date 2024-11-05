@@ -1,24 +1,30 @@
-*
-{
-    background-color:rgb(0, 0, 0);
-}
-
 header
 {
-    background-color: white;
-    height: 70px;
-}
-
-.PageLogo
-{
-    width: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.PageTitle
-{
     background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,64px);
+}
+
+.imgLogo
+{
+    height: 50px;
+    margin: 5px;
+    border: 2px inset red;
+    transition: 0,5s ease;
+}
+
+.imgLogo:hover
+{
+    transition: 0,5s ease;
+    border: 2px outset purple;
+}
+
+.headerTitle
+{
+    background-color: blue;
     text-align: center;
-    width: 500px;
+    line-height: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28pt;
 }
