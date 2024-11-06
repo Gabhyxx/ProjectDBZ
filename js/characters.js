@@ -20,21 +20,13 @@ async function fetchCharactersJSON()
 
 function createCharCard ({id, name, ki, maxKi, race, gender, description, image, affiliation})
 {
-  return `
-    <div class="card mb-3 cardCharacter" style="max-width: 540px;">
-    <div class="row g-0 cardFull">
-      <div class="col-md-4">
-        <img src="${image}" class="img-fluid rounded-start imgCharacter" alt="...">
-      </div>
-      <div class="col-md-8 cardText">
-        <div class="card-body cardBody">
-          <h5 class="card-title">${id} - ${name}</h5>
-          <p class="card-text">KI: ${ki}</p>
-          <p class="card-text"><small class="text-body-secondary">MaxKI: ${maxKi}</small></p>
-        </div>
-      </div>
-    </div>
-  </div>`;
+  return `<div class="card charCard" style="width: 20rem;">
+            <img src="${image}" class="card-img-top charImg" alt="...">
+            <div class="card-body charCardBody">
+                <h5 class="card-title">${id} - ${name}</h5>
+                <p class="card-text">${gender} - ${race}</p>
+            </div>
+        </div>`;
 }
 
 async function displayCharacters()

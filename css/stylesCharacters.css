@@ -1,23 +1,37 @@
+body
+{
+    background-color: black;
+}
+
 header
 {
-    background-color: aqua;
+    background-color: #a5ff38;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 64px;
 }
 
-main
+.imgLogo
 {
-    background-color: brown;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid transparent;
+    transition: 0,5s ease;
 }
 
-footer
+.imgLogo:hover
 {
-    background-color: green;
+    transition: 0,5s ease;
+    border: 2px outset white;
 }
 
-.imgCharacter
+.headerTitle
 {
-    width: 100px;
-    background-color: white;
-    border-radius: 5px;
+    color: black;
+    text-align: center;
+    line-height: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28pt;
 }
 
 .characterCards
@@ -25,26 +39,79 @@ footer
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 25px;
+    color: white;
+    justify-content: center;
 }
 
-.cardFull
+.charCard
 {
-    width: 100px;
-    height: 512px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    background-color: aqua;
+    align-content: center;
+    border-color: #a5ff38;
+    border-radius: 10px;
 }
 
-.cardCharacter
+.charImg
 {
-    margin:25px;
-    border-width: 10px;
-    border-color: purple;
+    height: 400px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25px;
 }
 
-.cardText
+.charCardBody
 {
-    border-radius: 5px;
     text-align: center;
-    background-color: chartreuse;
+}
+
+footer
+{
+    display: grid;
+    color: black;
+    background-color: #a5ff38;
+    line-height: 64px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 128px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerAllPages
+{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: repeat(4,32px);
+    margin-left: 64px;
+}
+
+.footerAllPagesTitle
+{
+    text-decoration: underline;
+}
+
+.footerTitle
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-rows: repeat(4,32px);
+}
+
+.footerSocial
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    line-height: 176px;
+    grid-row: 128px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.footerLogo
+{
+    width: 64px;
+    height: 64px;
 }
