@@ -6,10 +6,6 @@ header
 main
 {
     background-color: brown;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: auto;
-    grid-area: auto;
 }
 
 footer
@@ -20,10 +16,35 @@ footer
 .imgCharacter
 {
     width: 100px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.characterCards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.cardFull
+{
+    width: 100px;
+    height: 512px;
 }
 
 .cardCharacter
 {
-    display: grid;
-    
+    margin:25px;
+    border-width: 10px;
+    border-color: purple;
+}
+
+.cardText
+{
+    border-radius: 5px;
+    text-align: center;
+    background-color: chartreuse;
 }
