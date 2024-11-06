@@ -1,0 +1,45 @@
+header
+{
+    background-color: #a5ff38;
+}
+
+body
+{
+    background-color: black;
+}
+
+footer
+{
+    background-color: #a5ff38;
+}
+
+.planetCards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.card
+{
+    margin: 25px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10px;
+    
+}
+
+.cardBody
+{
+    margin-left: 10px;
+    width: 450px;
+}
+
+.planetImg
+{
+    width: 560px;
+    border-radius: 6px;
+}
+

@@ -21,14 +21,11 @@ async function fetchPlanetJSON()
 function createPlanetCard({id, name, isDestroyed, description, image})
 {
     return `<div class="card" style="width: 35rem;">
-            <img src="${image}" class="card-img-top" alt="...">
-            <div class="card-body">
+            <img src="${image}" class="card-img-top planetImg" alt="...">
+            <div class="card-body cardBody">
                 <h5 class="card-title">${id} - ${name}</h5>
                 <p class="card-text">${description}</p>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">${isDestroyed} €</li>
-            </ul>
         </div>`;
 }
 
