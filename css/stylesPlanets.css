@@ -1,6 +1,32 @@
 header
 {
     background-color: #a5ff38;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 64px;
+}
+
+.imgLogo
+{
+    height: 50px;
+    margin: 5px;
+    border: 2px solid transparent;
+    transition: 0,5s ease;
+}
+
+.imgLogo:hover
+{
+    transition: 0,5s ease;
+    border: 2px outset white;
+}
+
+.headerTitle
+{
+    color: black;
+    text-align: center;
+    line-height: 64px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28pt;
 }
 
 body
@@ -23,18 +49,20 @@ footer
 
 .card
 {
+    height: 750px;
     margin: 25px;
     margin-bottom: 25px;
     border-style: solid;
-    border-color: aqua;
+    border-color: #a5ff38;
     border-radius: 10px;
-    
 }
 
 .cardBody
 {
+    flex-direction: column;
+    align-items: baseline;
     margin-left: 10px;
-    width: 450px;
+    width: 540px;
 }
 
 .planetImg
@@ -43,3 +71,51 @@ footer
     border-radius: 6px;
 }
 
+footer
+{
+    display: grid;
+    color: black;
+    background-color: #a5ff38;
+    line-height: 64px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 128px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerAllPages
+{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: repeat(4,32px);
+    margin-left: 64px;
+}
+
+.footerAllPagesTitle
+{
+    text-decoration: underline;
+}
+
+.footerTitle
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-rows: repeat(4,32px);
+}
+
+.footerSocial
+{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    line-height: 176px;
+    grid-row: 128px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.footerLogo
+{
+    width: 64px;
+    height: 64px;
+}
