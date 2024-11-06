@@ -1,0 +1,29 @@
+header
+{
+    background-color: aqua;
+}
+
+main
+{
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-area: auto;
+}
+
+footer
+{
+    background-color: green;
+}
+
+.imgCharacter
+{
+    width: 100px;
+}
+
+.cardCharacter
+{
+    display: grid;
+    
+}

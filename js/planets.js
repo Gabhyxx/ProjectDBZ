@@ -37,9 +37,9 @@ async function displayPlanets()
     const planetSection = document.getElementById("planetSection");
     const planetData = await fetchPlanetJSON();
 
-    if (planetData && planetData.planet)
+    if (planetData && planetData.items)
     {
-        const planetCards = planetData.planets.map(createPlanetCard).join("");
+        const planetCards = planetData.items.map(createPlanetCard).join("");
         planetSection.innerHTML = planetCards;
     }
     else
