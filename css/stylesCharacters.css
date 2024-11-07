@@ -48,10 +48,10 @@ header
     display: flex;
     flex-direction: column;
     border-style: solid;
-    background-color: aqua;
     align-content: center;
     border-color: #a5ff38;
     border-radius: 10px;
+    margin: 25px;
 }
 
 .charImg
