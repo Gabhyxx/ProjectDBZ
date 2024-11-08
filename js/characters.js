@@ -18,7 +18,7 @@ async function fetchCharactersJSON()
     }
 }
 
-function createCharCard ({id, name, ki, maxKi, race, gender, description, image, affiliation})
+function createCharCard ({id, name, race, gender, image})
 {
   return `<div class="card charCard" style="width: 20rem;">
             <img src="${image}" class="card-img-top charImg" alt="...">

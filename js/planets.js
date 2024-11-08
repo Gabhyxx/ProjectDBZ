@@ -18,7 +18,7 @@ async function fetchPlanetJSON()
     }
 }
 
-function createPlanetCard({id, name, isDestroyed, description, image})
+function createPlanetCard({id, name, description, image})
 {
     return `<div class="card" style="width: 35rem;">
             <img src="${image}" class="card-img-top planetImg" alt="...">
